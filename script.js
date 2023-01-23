@@ -61,7 +61,7 @@ function createHeader() {
 function createTask(task) {
     let newDiv = document.createElement("div");
     newDiv.classList.add("row");
-    newDiv.innerHTML = `<span class='task'>${task.taskName}</span><a class="stats-container"><span class='stats'>${task.status}</span> <img class="stats-btn" src="/material-symbols_check-box-outline.svg"/><img class="task-close-btn" src="/Frame 1.svg"/></a>`;
+    newDiv.innerHTML = `<span class='task'>${task.taskName}</span><a class="stats-container"><span class='stats'>${task.status}</span> <img class="stats-btn" src="images/material-symbols_check-box-outline.svg"/><img class="task-close-btn" src="images/Frame 1.svg"/></a>`;
     todoContainer.appendChild(newDiv);
     let completeBtns = document.querySelectorAll(".stats-btn");
     completeBtns.forEach(function (completeBtn) {
