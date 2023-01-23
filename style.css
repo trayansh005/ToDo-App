@@ -1,149 +1,148 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-    background: #020202;
-    color: #fff;
-    overflow-y: scroll;
+	background: #3e4491;
+	color: #fff;
+	overflow-y: scroll;
 }
 
 body {
-    font-family: 'Oxanium', cursive;
-    height: 100%;
+	font-family: "Oxanium", cursive;
+	height: 100%;
 }
 
 .container {
-    width: 840px;
-    background: linear-gradient(114deg, rgba(55, 114, 255, 1) 0%, rgba(2, 2, 2, 1) 100%);
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+	width: 840px;
+	background: linear-gradient(to right, rgb(97, 144, 232), rgb(167, 191, 232));
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
 }
 
 #todo-container {
-    width: 840px;
-    height: auto;
-    background: #3772FF;
-    z-index: 10;
-    margin-top: 30px;
+	width: 840px;
+	height: auto;
+	background: #3772ff;
+	z-index: 10;
+	margin-top: 30px;
 }
 
 #btn {
-    padding: 10px 20px;
-    background: #344966;
-    border-radius: 5px;
-    border: 1px solid #3773ffb2;
-    color: #fff;
-    font-size: 16px;
-    gap: 10px;
-    margin-top: 20px;
-    transition: 0.3s ease;
-    margin-right: 20px;
+	padding: 10px 20px;
+	background: #344966;
+	border-radius: 5px;
+	border: 1px solid #3773ffb2;
+	color: #fff;
+	font-size: 16px;
+	gap: 10px;
+	margin-top: 20px;
+	transition: 0.3s ease;
+	margin-right: 20px;
 }
 
 #btn:hover {
-    background: #212738;
-    border: 1px solid #3773ff;
-    cursor: pointer;
+	background: #212738;
+	border: 1px solid #3773ff;
+	cursor: pointer;
 }
 
 .header {
-    margin-left: 50px;
-    margin-top: 50px;
+	margin-left: 50px;
+	margin-top: 50px;
 }
 
 .add-task {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    z-index: 99;
-    width: 320px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -20%);
+	z-index: 99;
+	width: 320px;
 }
 
 #task-input {
-    width: 100%;
-    border: none;
-    outline: none;
-    border: none;
-    background: #212738;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    resize: none;
-    padding: 18px;
-    transition: transform 0.3s, opacity 400ms;
-    visibility: hidden;
-    display: none;
+	width: 100%;
+	border: none;
+	outline: none;
+	border: none;
+	background: #212738;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	resize: none;
+	padding: 18px;
+	transition: transform 0.3s, opacity 400ms;
+	visibility: hidden;
+	display: none;
 }
 
 .add-task img {
-    position: absolute;
-    right: -15px;
-    top: 16px;
-    cursor: pointer;
-    transition: transform 0.3s, opacity 400ms;
-    visibility: hidden;
-    display: none;
+	position: absolute;
+	right: -15px;
+	top: 16px;
+	cursor: pointer;
+	transition: transform 0.3s, opacity 400ms;
+	visibility: hidden;
+	display: none;
 }
 
 .show {
-    transform: scale(1.2);
-    visibility: visible !important;
-    opacity: 1;
-    display: inline-block !important;
+	transform: scale(1.2);
+	visibility: visible !important;
+	opacity: 1;
+	display: inline-block !important;
 }
 
 .todo-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background: #344966;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10%;
+	background: #344966;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background: rgba(33, 39, 56, 0.8);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10%;
+	background: rgba(33, 39, 56, 0.8);
 }
 
 .row:nth-child(even) {
-    background: rgba(32, 38, 55, 0.75);
+	background: rgba(32, 38, 55, 0.75);
 }
 
 .row:nth-child(odd) {
-    background: #212738;
+	background: #212738;
 }
 
-
 .row span {
-    font-size: 18px;
-    font-weight: 500;
+	font-size: 18px;
+	font-weight: 500;
 }
 
 .stats-container {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .stats-btn {
-    cursor: pointer;
-    margin-left: 20px;
-    width: 20px;
-    height: 20px;
+	cursor: pointer;
+	margin-left: 20px;
+	width: 20px;
+	height: 20px;
 }
 
 .task-close-btn {
-    cursor: pointer;
-    margin-left: 10px;
-    width: 20px;
-    height: 20px;
+	cursor: pointer;
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
 }
